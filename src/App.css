@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  background-color: indigo;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wheatherApp{
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+.wheaterInfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  font-size: 15px;
+  color: indigo;
+}
+.wheatherInfo-top{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wheatherInfo-bottom{
+  display: flex;
+  gap: 20px;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
+
+header{
+  background-color: indigo;
+  padding: 20px;
+  width: 100%;
+}
+header input{
+ padding:10px;
+ outline: none;
+ border: none;
+ border: 1px solid indigo
+}
+header button{
+  padding: 9px;
+  background: white;
+  color: indigo;
+  border: 1px solid indigo
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+.error{
+  height: 200px;
+  display: flex;
+  color: indigo;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
